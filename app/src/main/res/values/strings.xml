@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecycleView</string>
+    <string name="rate_this_item_from_1_to_5_stars">Rate this item from 1 to 5 stars</string>
+</resources>

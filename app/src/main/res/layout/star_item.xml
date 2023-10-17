@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/star" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/stars"
+        android:layout_alignTop="@+id/img"
+        android:paddingTop="15dp"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/stars"
+        style="@android:style/Widget.Material.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/img"
+        android:accessibilityHeading="false"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:paddingBottom="15dp"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img"
+        android:layout_alignParentEnd="true"
+        android:text="TextView"
+        android:visibility="gone" />
+</RelativeLayout>
